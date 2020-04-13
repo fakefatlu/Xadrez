@@ -32,4 +32,18 @@ public class Tabuleiro {
 	public void setQuant_coluna(int quant_coluna) {
 		this.quant_coluna = quant_coluna;
 	}
+	
+	
+	
+	public Peca peca(int linha, int coluna) {
+		return pecas[linha][coluna];
+	}
+	
+	// sobrecarga
+	public Peca peca(Posicao posicao) {
+		return pecas[posicao.getLinha()][posicao.getColuna()];
+	}
+	
+	
+	
 }
