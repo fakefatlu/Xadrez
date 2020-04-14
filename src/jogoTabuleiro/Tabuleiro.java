@@ -4,8 +4,7 @@ public class Tabuleiro {
 	private int quant_linhas;
 	private int quant_coluna;
 	private Peca[][] pecas;
-	
-	
+		
 	public Tabuleiro(int quant_linhas, int quant_coluna) {
 		if(quant_linhas < 1 || quant_coluna < 1 ) {
 			throw new PlacaExecao("Erro na criação do tabuleiro: É nescessario que haja pelo menos uma linha e uma coluna. ");
@@ -16,7 +15,6 @@ public class Tabuleiro {
 		
 		pecas = new Peca[quant_linhas][quant_coluna];
 	}
-
 
 	public int getQuant_linhas() {
 		return quant_linhas;
@@ -62,8 +60,7 @@ public class Tabuleiro {
 	
 	public boolean pecaExistente(Posicao posicao) {
 		if(!posicaoExistente(posicao)) {
-			throw new PlacaExecao("Posição invalida!");
-			
+			throw new PlacaExecao("Posição invalida!");	
 		}
 		return peca(posicao) != null;
 	}

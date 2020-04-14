@@ -6,5 +6,4 @@ public class PlacaExecao extends RuntimeException{
 	public PlacaExecao(String msg) {
 		super(msg);
 	}
-	
 }
