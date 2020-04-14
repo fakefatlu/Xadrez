@@ -10,5 +10,6 @@ public class Programa {
 		UI.printTabela(partida.getPecas());
 	
 	}
+	
 
 }
